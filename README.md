@@ -1,8 +1,14 @@
 # gpd-windows
 Project Directory Generator for Windows
 
+
+## Prerequisites
+- On Windows 10, install [rails](http://blog.teamtreehouse.com/installing-rails-5-windows "Ruby on Rails").
+
+
 ## Syntax
     gpd [ domain [entity [project [application]]]]
+
 
 ## Parameters
     domain        Top level domain name abbreviation.
@@ -21,19 +27,19 @@ By default, gpd with all parameters will create a rails application in the direc
 
 Create a **website** directory structure for a company called **example.com**.
 ```
-$ ./gpd.sh com example website
+> gpd.bat com example website
 ```
 
 Create a **food blog** rails application in a directory structure for a company called **acme.org**.
 ```
-$ ./gpd.sh org acme blog food
+> gpd.bat org acme blog food
 ```
 
 Create a **bootstrap tutorial** rails application based on a development branch of **W3Schools**.
 ```
-$ ./gpd.sh com w3schools tutorial
-$ cd GITRepositories/com/w3schools/tutorial/branches/develop
-$ rails new learn-bootstrap
+> gpd.bat com w3schools tutorial
+> cd GITRepositories\com\w3schools\tutorial\branches\develop
+> rails new learn-bootstrap
 ```
 
 
